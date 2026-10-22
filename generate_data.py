@@ -56,5 +56,10 @@ for col in ["ink_ml", "waste_pct", "design_time_min"]:
     df.loc[rng.choice(df.index, 2, replace=False), col] = np.nan
 df.loc[rng.integers(0, N), "total_cost_eur"] *= 3
 
-df.to_csv("data/orders.csv", index=False)
+from pathlib import Path
+
+output_path = Path("orders.csv")
+df.to_csv(output_path, index=False)
+
+print(f"Dataset saved to: {output_path.resolve()}")
 print(df.head(), "\n", df.shape)
