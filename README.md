@@ -23,9 +23,11 @@ The data are **simulated** (60 orders), because there were not enough structured
 | `requirements.txt` | Python packages needed to run the notebook |
 
 ## How to run
+
+'''
 pip install -r requirements.txt
 jupyter notebook pricing_model.ipynb
-
+'''
 
 Then choose **Kernel → Restart & Run All**. The notebook reads `orders.csv` from the same folder. To regenerate the data, run `python generate_data.py`. The script saves `orders.csv` in the current working directory, next to the notebook.
 
