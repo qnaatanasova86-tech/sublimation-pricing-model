@@ -44,4 +44,4 @@ The data are simulated, the sample is small (59 orders), the calculator should b
 
 ## Use of AI assistance
 
-Parts of this project were prepared with the help of an AI assistant (Claude, by Anthropic). More details are in Section 11 of the notebook.
+Parts of this project were prepared with the help of an AI assistant (Claude, by Anthropic and ChatGPT). More details are in Section 11 of the notebook.
