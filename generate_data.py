@@ -1,8 +1,8 @@
-"""Generate SIMULATED order data for the sublimation pricing project.
+"""Generate a synthetic dataset of sublimation orders for the pricing model.
 
-All values are synthetic. Costs are in EUR. The true cost formula is a
-linear combination of the features plus noise, so a regression model
-should be able to recover it. Fixed seed for reproducibility.
+The simulated costs are generated from known product- and quantity-dependent cost components, 
+with a waste adjustment and random noise. The regression models approximate these relationships, 
+allowing their predictive performance to be studied in a controlled setting.
 """
 import numpy as np
 import pandas as pd
